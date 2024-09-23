@@ -30,8 +30,8 @@ namespace Tyuiu.RaushKN.Sprint2.Task5.V15
 
             string res;
 
-            if ((k < 1) || (k > 7)) res = "Введено неверное значение!";
-            else res = /*"Это день: " +*/ ds.FindDayName(k);
+            if ((k < 1) || (k > 365)) res = "Введено неверное значение!";
+            else res = "Это день: " + ds.FindDayName(k);
 
             Console.WriteLine("###########################################################################");
             Console.WriteLine("# РЕЗУЛЬТАТ:                                                              #");

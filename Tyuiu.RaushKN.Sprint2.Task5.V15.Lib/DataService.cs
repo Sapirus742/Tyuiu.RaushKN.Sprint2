@@ -7,7 +7,7 @@ namespace Tyuiu.RaushKN.Sprint2.Task5.V15.Lib
         public string FindDayName(int k)
         {
             string res;
-            switch (k)
+            switch (k%7)
             {
                 case 1:
                     res = "Понедельник";
@@ -27,11 +27,11 @@ namespace Tyuiu.RaushKN.Sprint2.Task5.V15.Lib
                 case 6:
                     res = "Суббота";
                     break;
-                case 7:
+                case 0:
                     res = "Воскресенье";
                     break;
                 default:
-                    throw new ArgumentException($"День должен быть от 1 до 7. Значение {k}");
+                    throw new ArgumentException($"День должен быть от 1 до 365. Значение {k}");
             }
             return res;
         }

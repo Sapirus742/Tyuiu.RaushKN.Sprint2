@@ -22,10 +22,7 @@ namespace Tyuiu.RaushKN.Sprint2.Task5.V15.Test
             {
                 ds.FindDayName(-1);
             });
-            Assert.ThrowsException<ArgumentException>(() =>
-            {
-                ds.FindDayName(8);
-            });
+            
         }
     }
 }
